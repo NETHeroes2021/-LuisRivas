@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>04Proyecto</name>
+    </assembly>
+    <members>
+        <member name="M:_04Proyecto.Acero.#ctor(System.Decimal)">
+            <summary>
+            Constructor que crea un elemento Acero introduciendo su peso
+            </summary>
+            <param name="peso">Kilos de acero</param>
+        </member>
+        <member name="M:_04Proyecto.Acero.DevolverPeso">
+            <summary>
+            Devuelve cuanto pesa un elemento de la clase Acero
+            </summary>
+            <returns>Peso</returns>
+        </member>
+        <member name="M:_04Proyecto.Bronce.#ctor(System.Decimal)">
+            <summary>
+            Cosntructor que crea un nuevo elemento Bronce con el peso
+            en KG del elemtno
+            </summary>
+            <param name="peso">KG del elemento</param>
+        </member>
+        <member name="M:_04Proyecto.Bronce.DevolverPeso">
+            <summary>
+            Devuelve cuanto pesa un elemento de la clase Bronce
+            </summary>
+            <returns>Peso</returns>
+        </member>
+        <member name="M:_04Proyecto.Chip.#ctor(System.Decimal)">
+            <summary>
+            Cosntructor que crea un nuevo elemento Chip con el peso
+            en KG del elemtno
+            </summary>
+            <param name="peso"></param>
+        </member>
+        <member name="M:_04Proyecto.Chip.DevolverPeso">
+            <summary>
+            Devuelve cuanto pesa un elemento de la clase Chip
+            </summary>
+            <returns>Peso</returns>
+        </member>
+        <member name="M:_04Proyecto.Escoba.#ctor(System.Decimal,System.Boolean)">
+            <summary>
+            Cosntructor que crea un nuevo elemento Escoba con el peso
+            en KG del elemento, y un booleano de si esta ardiendo.
+            </summary>
+            <param name="peso">Peso del elemento en kg</param>
+            <param name="arde">booleano de si esta ardiendo</param>
+        </member>
+        <member name="M:_04Proyecto.Escoba.DevolverPeso">
+            <summary>
+            Devuelve cuanto pesa un elemento de la clase Escoba
+            </summary>
+            <returns>Peso</returns>
+        </member>
+        <member name="M:_04Proyecto.Escoba.EstaArdiendo">
+            <summary>
+            Devuelve si el elemento escoba esta ardiendo o no
+            </summary>
+            <returns>Arde</returns>
+        </member>
+        <member name="F:_04Proyecto.Form1.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:_04Proyecto.Form1.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:_04Proyecto.Form1.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:_04Proyecto.Gominola.#ctor(System.Decimal,System.Boolean,System.Boolean)">
+            <summary>
+            Cosntructor que crea un nuevo elemento Gominola con el peso
+            en KG del elemento, un booleano de si esta ardiendo y otro
+            booleano de si el elemento esta caducado o no.
+            </summary>
+            <param name="peso">Peso en KG</param>
+            <param name="arde">booleano de si esta ardiendo</param>
+            <param name="caducado">booleano de si esta caducado</param>
+        </member>
+        <member name="M:_04Proyecto.Gominola.DevolverPeso">
+            <summary>
+            Devuelve cuanto pesa un elemento de la clase Gominola
+            </summary>
+            <returns>Peso</returns>
+        </member>
+        <member name="M:_04Proyecto.Gominola.EstaArdiendo">
+            <summary>
+            Devuelve si el elemtno gominola esta ardiendo o no
+            </summary>
+            <returns>Arde</returns>
+        </member>
+        <member name="M:_04Proyecto.Gominola.EstaCaducado">
+            <summary>
+            Devuelve si el elemento gominola esta caducado o no
+            </summary>
+            <returns>Caducado</returns>
+        </member>
+        <member name="M:_04Proyecto.Higo.#ctor(System.Decimal,System.Boolean)">
+            <summary>
+            Cosntructor que crea un nuevo elemento Gominola con el peso
+            en KG del elemento, y un booleano de si el elemento esta caducado o no.
+            </summary>
+            <param name="peso">Peso en KG</param>
+            <param name="caducado">booleano de si esta caducado</param>
+        </member>
+        <member name="M:_04Proyecto.Higo.DevolverPeso">
+            <summary>
+            Devuelve cuanto pesa un elemento de la clase Higo
+            </summary>
+            <returns>Peso</returns>
+        </member>
+        <member name="M:_04Proyecto.Higo.EstaCaducado">
+            <summary>
+            Devuelve si el elemento Higo esta caducado
+            </summary>
+            <returns>Caducado</returns>
+        </member>
+        <member name="M:_04Proyecto.ListarNombres.recuperarNombreObjetos(System.Collections.Generic.List{_04Proyecto.IElemento})">
+            <summary>
+            Metodo que realiza una lista de los nombres de los elementos utilizando LINQ
+            </summary>
+            <param name="lista">Lista de Elementos</param>
+            <returns>Lista de strings de los nombres de los elemnentos de la lista dada</returns>
+        </member>
+        <member name="M:_04Proyecto.MediaNp.RealizarCuentas(System.Collections.Generic.List{_04Proyecto.IElemento})">
+            <summary>
+            Realiza la media de los productos no perecederos desde una lista de elemntos y 
+            relaizando el filtrado mediante LINQ
+            </summary>
+            <param name="lista">Lista de elementos</param>
+            <returns>Media de no perecederos</returns>
+        </member>
+        <member name="M:_04Proyecto.Papel.#ctor(System.Decimal,System.Boolean)">
+            <summary>
+            Cosntructor que crea un nuevo elemento Gominola con el peso
+            en KG del elemento, y un booleano de si el elemento esta ardiendo o no.
+            </summary>
+            <param name="peso">Peso en Kg</param>
+            <param name="arde">boolenao de si esta ardiendo</param>
+        </member>
+        <member name="M:_04Proyecto.Papel.DevolverPeso">
+            <summary>
+            Devuelve cuanto pesa un elemento de la clase Papel
+            </summary>
+            <returns>Peso</returns>
+        </member>
+        <member name="M:_04Proyecto.Papel.EstaArdiendo">
+            <summary>
+            Devuelve si el elemento Papel esta ardiendo o no
+            </summary>
+            <returns>Arder</returns>
+        </member>
+        <member name="M:_04Proyecto.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:_04Proyecto.SumaPereNi.RealizarCuentas(System.Collections.Generic.List{_04Proyecto.IElemento})">
+            <summary>
+            Mediante LINQ extrae de una lista de IElementos filtrando por si es IPerecezable y si no es IInflamable y el resultado
+            extraete el peso y lo suma
+            </summary>
+            <param name="lista">Lista de Elementos</param>
+            <returns>El peso de los elementos perecederos no inflamables</returns>
+        </member>
+        <member name="M:_04Proyecto.TipoBoton.DevolverTipo(System.String)">
+            <summary>
+            Pide el nombre del boton y mediante un switch reconece cual es y 
+            crea un objeto de eses tipo y lo devuelve
+            </summary>
+            <param name="sender">nombre del boton</param>
+            <returns>el objeto deseado</returns>
+        </member>
+    </members>
+</doc>
